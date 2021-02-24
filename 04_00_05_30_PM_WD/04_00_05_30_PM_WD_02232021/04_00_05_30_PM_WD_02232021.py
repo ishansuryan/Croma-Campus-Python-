@@ -1,12 +1,12 @@
-for row in range(5):
+# for row in range(5):
     
-    for space in range(5-row-1):
-        print(end = ' ')
+#     for space in range(5-row-1):
+#         print(end = ' ')
     
-    for start in range(5):
-        print(end = '*')
+#     for start in range(5):
+#         print(end = '*')
     
-    print()
+#     print()
     
 # While Loops:
 
@@ -55,6 +55,10 @@ while True :
         elif value == 'c':
             print("i guessed the number in {} times".format(count))
             break
+    
+    elif value.casefold() == 'quit':        
+        print("It's ok you quit")
+        break
             
     else : print('please enter correct value')
     
