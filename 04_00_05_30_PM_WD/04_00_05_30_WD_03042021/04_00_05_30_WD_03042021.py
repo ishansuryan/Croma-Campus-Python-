@@ -31,23 +31,45 @@
 # Dictionaries
 
 a = {1:1,2:{0.0:4},3:9,2:10}
-b=a
+# b=a
+# print(a)
+# print(b[2])
+# b[2]= 5
+# print(a)
+
+# d={}
+# e =dict()
+# print(type(d))
+# print(type(e))
+
+# print(a.keys())
+# print(a.values())
+# print(a.items())
+
+# l = [(1,(1,2,0)),(2,4),(3,9)]
+# f =dict(l)
+# print('f is',f)
+# print(a.get(9))
+# print(a[9])
+# a.update()
+
+b = {4:16,5:25}
+a.update(b)
 print(a)
-print(b[2])
-b[2]= 5
+
+c = ['10',('t','dddddddd')]
+
+a.update(c)
 print(a)
 
-d={}
-e =dict()
-print(type(d))
-print(type(e))
+e ={}
+e[2]= 'Question 2 answer'
+print(e)
 
-print(a.keys())
-print(a.values())
-print(a.items())
-
-l = [(1,(1,2,0)),(2,4),(3,9)]
-f =dict(l)
-print('f is',f)
-print(a.get(9))
-print(a[9])
+dic1={1:10, 2:20}
+dic2={3:30, 4:40}
+dic3={5:50,6:60}
+dic= {}
+for d in (dic1,dic2,dic3):
+    dic.update(d)
+print('dic is',dic)
