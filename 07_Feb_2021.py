@@ -9,3 +9,7 @@ print(r"c:\new folder")
 
 s = 'the quick brown fox jumpes over the lazy dog'
 print(s[::-1])
+
+layer = [1,2,3,4,5,6]
+slice = layer[:-1]
+print(slice)
