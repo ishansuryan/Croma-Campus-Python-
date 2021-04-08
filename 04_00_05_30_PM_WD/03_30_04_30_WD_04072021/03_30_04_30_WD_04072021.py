@@ -7,10 +7,19 @@ Ha Haha
 additive
 add ddd
 email@.com
-croma_campus.@gmail.com
+croma_campus.@gmail.com sdsdsdafwfswf
 e_mail@site.gov.in
+abs.132@gmail.com
 
 '''
 import re
 
-print(re.match(r'\wd?',s))
+print(re.match(r'(\(?\d{3,4}\)?-?){3}',s))
+
+
+'''
+Regex code 
+for mobile:  \(?\d{3,4}\)?-?
+
+for email :  [\w\.]*@\w{2,20}[\w*\.]+
+'''
