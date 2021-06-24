@@ -1,0 +1,3 @@
+Test content for file handling in multiple file
+second line in multiple file
+third line in multiple file
