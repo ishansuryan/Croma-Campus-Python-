@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<body>
+
+<style>
+body {
+  background-image: url('/mnt/New_Volume/Work_From_Home/Croma_Campus/07132021/09_30_11_00_07132021/static/california.jpg');
+}
+</style>
+
+<form action = "{{ url_for('predict') }}", method = "POST">
+  <label for="longitude">longitude:</label>
+  <input type="text" id="longitude" name="longitude"><br>
+  <br>
+  <label for="latitude">latitude:</label>
+  <input type="text" id="latitude" name="latitude"><br>
+  <br>
+  <label for="housing_median_age">housing_median_age:</label>
+  <input type="text" id="housing_median_age" name="housing_median_age"><br>
+  <br>
+  <label for="total_rooms">total_rooms:</label>
+  <input type="text" id="total_rooms" name="total_rooms"><br>
+  <br>
+  <label for="total_bedrooms">total_bedrooms:</label>
+  <input type="text" id="total_bedrooms" name="total_bedrooms"><br>
+  <br>
+  <label for="population">population:</label>
+  <input type="text" id="population" name="population"><br>
+  <br>
+  <label for="households">households:</label>
+  <input type="text" id="households" name="households"><br>
+  <br>
+  <label for="median_income">median_income:</label>
+  <input type="text" id="median_income" name="median_income"><br>
+  <br>
+  <label for="ocean_proximity">ocean_proximity:</label>
+  <input type="text" id="ocean_proximity" name="ocean_proximity"><br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+{{ prediction }}
+
+</body>
+
+
